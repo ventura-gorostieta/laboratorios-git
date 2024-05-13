@@ -2,26 +2,72 @@
 
 **Objetivos:**
 
-- Crear y cambiar entre ramas.
+- Manejo de ramas.
 - Fusionar cambios de una rama a otra.
 
+### Ejercicio 1: Crear y Listar Ramas
 **Instrucciones:**
-
-1. Crear una nueva rama
+1. Abre tu terminal y navega al directorio de un repositorio Git existente.
+2. Lista las ramas existentes en tu repositorio con:
+   ```bash
+   git branch
+   ```
+3. Crea una nueva rama llamada `feature-x usando`
 ```bash
-git branch mi-nueva-rama
+git branch feature-x
 ```
-2. Cambia a la nueva rama
+4. Verifica que la rama se ha creado correctamente listando nuevamente las ramas:
 ```bash
-git checkout mi-nueva-rama
+git branch
 ```
-3. Realiza cambios y agregalos con el comando add.
 
-4. Cambia de regreso a la rama principal (main/master):
+### Ejercicio 2: Cambia entre ramas
+1. Cambia a la nueva rama
+```bash
+git checkout feature-x
+```
+3. Confirma que estás ahora en la nueva rama con:
+```bash
+git branch
+```
+Deberías ver un asterisco (*) al lado de feature-x, indicando que es la rama activa.
+
+### Ejercicio 3: Modificar y Confirmar Cambios en la Rama
+**instrucciones**
+1. Mientras estés en la rama feature-x, crea un nuevo archivo llamado test.txt y añade algún contenido.
+2. Añade el archivo al área de preparación con
+```bash
+git add test.txt
+```
+5. Usa el comando commit para confirmar el cambio
+```bash
+git commit -m "Añadiendo test.txt a feature-x"
+```
+
+### Ejercicio 4: Fusionar Ramas (merge)
+1. Cambia de regreso a la rama principal (generalmente main o master):
 ```bash
 git checkout main
 ```
-5. Fusiona (merge) la nueva rama con la principal
+
+2. Fusiona (merge) la rama feature-x en la rama principal con:
 ```bash
-git merge mi-nueva-rama
+git merge feature-x
+```
+
+3. Verifica que los cambios se han integrado viendo el historial de commits:
+```bash
+git log
+```
+
+### Ejercicio 5: Eliminar Ramas (branches)
+**instrucciones**
+1. Una vez fusionada la rama y confirmado que todo está correcto, puedes eliminar la rama feature-x con:
+```bash
+git branch -d feature-x
+```
+
+## Conclusion
+```text
+Este mini laboratorio proporciona una forma estructurada y clara de aprender sobre el manejo de ramas en Git. Puedes adaptarlo según las necesidades específicas de tu curso o agregar más detalles si lo consideras necesario. ¿Hay algo más en lo que te gustaría que profundizáramos?
 ```
