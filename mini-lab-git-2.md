@@ -15,7 +15,7 @@ git branch mi-nueva-rama
 ```bash
 git checkout mi-nueva-rama
 ```
-3. Realiza cambios y confírmalos.
+3. Realiza cambios y agregalos con el comando add.
 
 4. Cambia de regreso a la rama principal (main/master):
 ```bash
