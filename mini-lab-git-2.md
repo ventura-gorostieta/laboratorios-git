@@ -60,6 +60,11 @@ git merge feature-x
 git log
 ```
 
+4. Usa el comando push para enviar tus cambios a tu remote/origin en la rama main
+```bash
+git push origin main
+```
+
 ### Ejercicio 5: Eliminar Ramas (branches)
 **instrucciones**
 1. Una vez fusionada la rama y confirmado que todo está correcto, puedes eliminar la rama feature-x con:
