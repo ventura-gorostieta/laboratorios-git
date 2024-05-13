@@ -69,5 +69,5 @@ git branch -d feature-x
 
 ## Conclusion
 ```text
-Este mini laboratorio proporciona una forma estructurada y clara de aprender sobre el manejo de ramas en Git. Puedes adaptarlo según las necesidades específicas de tu curso o agregar más detalles si lo consideras necesario. ¿Hay algo más en lo que te gustaría que profundizáramos?
+Este mini laboratorio proporciona una forma estructurada y clara de aprender sobre el manejo de ramas en Git.
 ```
